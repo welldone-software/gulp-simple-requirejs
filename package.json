@@ -1,0 +1,30 @@
+{
+  "name": "gulp-simple-requirejs",
+  "version": "1.0.0",
+  "description": "A gulp requirejs enabler, passing through all the arguments to rjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/welldone-software/gulp-simple-requirejs.git"
+  },
+  "keywords": [
+    "gulp",
+    "requirejs",
+    "rjs",
+    "optimize"
+  ],
+  "author": "danikenan@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/welldone-software/gulp-simple-requirejs/issues"
+  },
+  "homepage": "https://github.com/welldone-software/gulp-simple-requirejs",
+  "dependencies": {
+    "event-stream": "^3.2.1",
+    "gulp-util": "^3.0.2",
+    "requirejs": "^2.1.15"
+  }
+}
