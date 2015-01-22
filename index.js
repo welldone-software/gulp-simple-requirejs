@@ -1,16 +1,17 @@
 var PLUGIN_NAME = 'gulp-simple-requirejs',
-    stream = require('event-stream').through(),
     path = require('path'),
     gutil = require('gulp-util'),
     requirejs = require('requirejs');
 
 module.exports = function (opts) {
 
-    var fileName = opts.out,
+    var stream = require('event-stream').through(),
+        fileName = opts.out,
         rjsCb = function (text, sourceMapText) {
 
             var output = fileName,
                 mapOutput = output + '.map';
+
 
             if (sourceMapText) {
                 stream.write(new gutil.File({
