@@ -28,7 +28,9 @@ module.exports = function (opts) {
             stream.end();
         },
         errCb = function (err) {
-            stream.emit('error', new gutil.PluginError(PLUGIN_NAME, err));
+            console.error(err);
+            stream.emit('error', new gutil.PluginError(PLUGIN_NAME, err,{showStack: true}));
+            stream.end();
         };
 
     opts.out = rjsCb;
